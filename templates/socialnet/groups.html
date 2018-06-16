@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Social Groups</title>{% endblock %}
+</head>
+
+<body> 
+  {% block sidebar %}<h1> total groups: </h1><h1> {{ total_groups }} </h1>{% endblock %}
+  {% block content %}<h1> user1 groups number: </h1><h1> {{ groups_user1 }} </h1>
+                     <h1> user2 groups number: </h1><h1> {{ groups_user2 }} </h1>{% endblock %}
+</body>
+</html>
