@@ -14,7 +14,7 @@ def profile(request):
     return HttpResponse("Yo, this is your profile.")
 
 def front_page(request):
-    return HttpResponse("Yo, this is the front page.")
+    return render(request, 'socialnet/front_page.html')
 
 def groups(request):
     #show total number of groups:

@@ -21,8 +21,5 @@ class Group(models.Model):
     class Meta:
         ordering = ['group_name']
 
-        
-
-
 
     
