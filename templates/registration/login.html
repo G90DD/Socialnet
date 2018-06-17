@@ -1,13 +1,42 @@
+{% load static %}
+
 <html>
 <head>
+<link href="{% static 'socialnet/bootstrap.min.css' %}" rel="stylesheet" id="bootstrap-css">
+<link href="{% static 'socialnet/bootstrap-grid.min.css' %}" rel="stylesheet" id="bootstrap-grid.min">
+<link href="{% static 'socialnet/bootstrap-reboot.min.css' %}" rel="stylesheet" id="bootstrap-reboot.min">
+<link rel="stylesheet" type="text/css" href="{% static 'socialnet/login.css' %}" id="login-css">
+<script src="{% static 'socialnet/bootstrap.min.js' %}"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<title>Social Net</title>
 </head>
 
 <body>
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
+
+<div class="jumbotron text-center">
+  <h1>Social Net</h1>
+</div>
+
+ <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+    </div>
+		<div class="col-sm-4">
+            <form class="" method="post">
+                <div class="control group">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="controls">
+                    <button class="btn btn-success" type="submit">Login</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+ </div>
+
+
+
+
 </body>
 </html>

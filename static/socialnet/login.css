@@ -1,0 +1,34 @@
+/*.container {
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25%;
+  bottom: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 1em 2em;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  display: table;
+}*/
+
+/*.outer-wrapper {
+display: table;
+width: 100%;
+height: 100%;
+top: 25%;
+}*/
+
+/*.inner-wrapper {
+  display:table-cell;
+  vertical-align:middle;
+  padding:15px;
+}*/
+
